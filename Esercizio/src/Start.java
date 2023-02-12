@@ -7,7 +7,6 @@ public class Start {
             System.out.println("Inserire un numero da 1 a 10: ");
             Scanner scanner = new Scanner(System.in);
             int number = scanner.nextInt();
-            if (number < 10 && number > 1) {
                 switch (number) {
                     case 1:
                         System.out.println("The number is one");
@@ -39,8 +38,10 @@ public class Start {
                     case 10:
                         System.out.println("The number is ten");
                         break;
+                    default:
+                        System.out.println("Cannot give you the name");
                 }
-            }else System.out.println("Cannot give you the name: " + number);
+            }
         }
     }
-}
+
